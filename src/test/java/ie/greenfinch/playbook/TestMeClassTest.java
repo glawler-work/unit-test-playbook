@@ -4,9 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.springframework.test.util.ReflectionTestUtils;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -18,15 +18,12 @@ import static org.mockito.Mockito.*;
 public class TestMeClassTest {
     private static final String ID = "id";
     private static final String PROPERTY = "property";
-    private TestMeClass testMeClass;
+    @InjectMocks private TestMeClass testMeClass;
     private ModelClass modelClass;
     @Mock private DataAccessObject dataAccessObject;
 
     @Before
     public void onSetUp() {
-        testMeClass = new TestMeClass();
-        ReflectionTestUtils.setField(testMeClass, "dataAccessObject", dataAccessObject);
-
         modelClass = new ModelClass();
         modelClass.setId(ID);
         modelClass.setProperty(PROPERTY);
