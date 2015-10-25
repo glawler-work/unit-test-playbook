@@ -1,5 +1,7 @@
-package ie.greenfinch.playbook;
+package ie.greenfinch.playbook.service;
 
+import ie.greenfinch.playbook.dao.DataAccessObject;
+import ie.greenfinch.playbook.model.ModelClass;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class TestMeClass {

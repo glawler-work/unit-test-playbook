@@ -1,4 +1,6 @@
-package ie.greenfinch.playbook;
+package ie.greenfinch.playbook.dao;
+
+import ie.greenfinch.playbook.model.ModelClass;
 
 public class DataAccessObject {
 

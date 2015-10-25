@@ -1,5 +1,8 @@
-package ie.greenfinch.playbook;
+package ie.greenfinch.playbook.service;
 
+import ie.greenfinch.playbook.dao.DataAccessObject;
+import ie.greenfinch.playbook.model.ModelClass;
+import ie.greenfinch.playbook.service.TestMeClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

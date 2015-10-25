@@ -1,10 +1,15 @@
-package ie.greenfinch.playbook;
+package ie.greenfinch.playbook.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
 
 public class ModelClass {
 
+    @JsonProperty
     private String id;
+
+    @JsonProperty
     private String property;
 
     public String getId() {
